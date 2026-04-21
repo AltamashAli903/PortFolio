@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/frontendrepository/static/css/main.8708a269.css",
-    "main.js": "/frontendrepository/static/js/main.0bfc22ad.js",
+    "main.css": "/frontendrepository/static/css/main.2f94f4a9.css",
+    "main.js": "/frontendrepository/static/js/main.e7894e9f.js",
     "static/js/453.ad7768ec.chunk.js": "/frontendrepository/static/js/453.ad7768ec.chunk.js",
+    "static/media/Altamash.jpg": "/frontendrepository/static/media/Altamash.91f1fe8556d0f2a46815.jpg",
     "index.html": "/frontendrepository/index.html",
-    "main.8708a269.css.map": "/frontendrepository/static/css/main.8708a269.css.map",
-    "main.0bfc22ad.js.map": "/frontendrepository/static/js/main.0bfc22ad.js.map",
+    "main.2f94f4a9.css.map": "/frontendrepository/static/css/main.2f94f4a9.css.map",
+    "main.e7894e9f.js.map": "/frontendrepository/static/js/main.e7894e9f.js.map",
     "453.ad7768ec.chunk.js.map": "/frontendrepository/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8708a269.css",
-    "static/js/main.0bfc22ad.js"
+    "static/css/main.2f94f4a9.css",
+    "static/js/main.e7894e9f.js"
   ]
 }
