@@ -1,13 +1,125 @@
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 const Project = () => {
+  const projects = [
+    {
+      title: "Attendance Management System For Employees",
+      description:
+        "Face recognition-based system with real-time tracking, late rules automation, and reporting dashboard.",
+      tech: ["Node.js", "Express", "MySQL (SP)", "JWT", "React"],
+      live: "https://attendance.skyvisionitsolutions.online/",
+    },
+    {
+      title: "Logistics & Transload Platform",
+      description:
+        "Secure backend system to manage shipments, company data, and API-driven operations.",
+      tech: ["Node.js", "Express", "MySQL (SP)", "JWT", "React+Vite"],
+      live: "https://transload.skyvisionitsolutions.online/",
+    },
+    {
+      title: "Turf Booking System",
+      description:
+        "Slot-based booking system with availability tracking and admin control for turf owners.",
+      tech: ["Node.js", "Express", "MySQL (SP)", "JWT", "React+Vite"],
+      live: "",
+    },
+    {
+      title: "Aptitude Test Platform",
+      description:
+        "Online platform for conducting aptitude tests with real-time evaluation and reporting.",
+      tech: ["Node.js", "Express", "MySQL (SP)", "JWT", "React+Vite"],
+      live: "https://exam.skyvisionitsolutions.online/",
+    },
+    {
+      title: "Attendance Management System For Gym",
+      description:
+        "Face recognition-based system for gym attendance tracking, with real-time monitoring and reporting features.",
+      tech: ["Node.js", "Express", "MySQL (SP)", "JWT", "React+Vite"],
+      live: "",
+    },
+    {
+      title: "Database Backup Functionality",
+      description:
+        "A Functionality Which Helps To Take back up (Export) The Database (Schema) In MySQL",
+      tech: ["Node.js", "Express", "MySQL (SP)", "JWT", "React+Vite"],
+      live: "",
+    },
+  ];
+
   return (
-    <div className="block gap-5 pt-5 md:flex">
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/yRpLlJmRo2w?si=JOBlLX4XVpuRIFHV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section id="projects" className="bg-[#f9fafb] py-10 px-6">
+      <div className="max-w-6xl mx-auto">
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/yRpLlJmRo2w?si=JOBlLX4XVpuRIFHV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/yRpLlJmRo2w?si=JOBlLX4XVpuRIFHV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-  )
-}
+        {/* HEADING */}
+        <div className="text-center mb-14">
+          <h2 className="text-3xl font-bold text-gray-900">Projects</h2>
+          <p className="text-gray-500 mt-2 text-sm">
+            Real-world systems I’ve built and worked on
+          </p>
+        </div>
 
-export default Project
+        {/* GRID */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {projects.map((project, i) => (
+            <div
+              key={i}
+              className="bg-white border border-emerald-400 rounded-2xl p-6 shadow-lg 
+                         transition duration-300 flex flex-col justify-between
+                         hover:-translate-y-1 hover:shadow-xl"
+            >
+
+              {/* TOP */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {project.title}
+                </h3>
+
+                <p className="text-gray-600 text-sm mt-3 leading-6">
+                  {project.description}
+                </p>
+
+                {/* TECH STACK */}
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {project.tech.map((t, index) => (
+                    <span
+                      key={index}
+                      className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* BUTTON */}
+              <div className="mt-6">
+                {project.live ? (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full bg-emerald-600 text-white text-sm py-2.5 rounded-lg hover:bg-emerald-700 transition"
+                  >
+                    View Live <FaExternalLinkAlt />
+                  </a>
+                ) : (
+                  <button
+                    disabled
+                    className="w-full text-sm py-2.5 rounded-lg bg-gray-200 text-gray-500 cursor-not-allowed"
+                  >
+                    Coming Soon
+                  </button>
+                )}
+              </div>
+
+            </div>
+          ))}
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Project;

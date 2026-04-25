@@ -1,10 +1,10 @@
 const Contact = () => {
   return (
-    <section className="bg-[#f9fafb] py-20 px-4 sm:px-6">
+    <section className="bg-[#f9fafb] py-5 px-4 sm:px-6">
       <div className="max-w-2xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-10">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-7">
           Contact Me
         </h2>
 
@@ -13,7 +13,7 @@ const Contact = () => {
 
           {/* Intro */}
           <p className="text-gray-600 text-center">
-            Feel free to reach out for opportunities, collaborations, or just a tech discussion.
+            Feel free to Connect With Me For Any Kind of Work Opportunity and Collaboration.
           </p>
 
           {/* Info Grid */}
@@ -23,7 +23,7 @@ const Contact = () => {
             <div>
               <p className="text-gray-500 text-sm">Phone</p>
               <a
-                className="text-emerald-600 font-semibold hover:underline"
+                className="text-gray-900 font-bold hover:underline"
               >
                 +91 9834588923
               </a>
@@ -34,7 +34,7 @@ const Contact = () => {
               <p className="text-gray-500 text-sm">Email</p>
               <a
                 href="mailto:sayyadaltamash26@gmail.com"
-                className="text-emerald-600 font-semibold hover:underline break-all"
+                className="text-gray-900 font-bold hover:underline break-all"
               >
                 sayyadaltamash26@gmail.com
               </a>
@@ -43,7 +43,7 @@ const Contact = () => {
             {/* Location */}
             <div>
               <p className="text-gray-500 text-sm">Location</p>
-              <p className="text-gray-800 font-medium">
+              <p className="text-gray-900 font-bold">
                 Nagpur, Maharashtra
               </p>
             </div>
@@ -51,8 +51,8 @@ const Contact = () => {
             {/* Availability */}
             <div>
               <p className="text-gray-500 text-sm">Availability</p>
-              <p className="text-emerald-600 font-medium">
-                Open to opportunities
+              <p className="text-gray-900 font-bold">
+                Open to Grab opportunities
               </p>
             </div>
 
@@ -60,9 +60,9 @@ const Contact = () => {
 
           {/* Work Preference */}
           <div>
-            <p className="text-gray-500 text-sm">Work Preference</p>
+            <p className="text-gray-900 font-bold text-sm">Work Preference</p>
             <p className="text-gray-700">
-              Open to Full-time Job Role, Mainly Focusing On Node Backend Developer
+              Open For a Full-time Job Role, Mainly Focusing On Node Backend Developer
             </p>
           </div>
 
@@ -102,11 +102,6 @@ const Contact = () => {
           </div>
 
         </div>
-
-        {/* Bottom Note */}
-        <p className="text-center text-gray-500 mt-8">
-          Let’s build something impactful 🚀
-        </p>
 
       </div>
     </section>

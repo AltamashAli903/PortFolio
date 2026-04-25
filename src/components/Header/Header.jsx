@@ -8,6 +8,7 @@ const Header = () => {
     { name: "Home", path: "/home" },
     { name: "Skills", path: "/skills" },
     { name: "Education", path: "/education" },
+    { name: "Projects", path: "/projects" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
@@ -19,7 +20,7 @@ const Header = () => {
         {/* LOGO */}
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 flex items-center justify-center rounded-lg bg-emerald-500 text-white font-bold">
-            AA
+            <Link to="/home">AA</Link>
           </div>
           <div>
             <p className="text-xs text-gray-500">PORTFOLIO</p>

@@ -1,7 +1,7 @@
 const Education = () => {
   const educationData = [
     {
-      title: "Bachelor of Vocation (B.Voc) - Software Development",
+      title: "Bachelor of Vocation (B.Voc) - Software Development (Graduation)",
       college: "Kamla Nehru Mahavidyalaya, Nagpur",
       duration: "2023 – 2026"
     },

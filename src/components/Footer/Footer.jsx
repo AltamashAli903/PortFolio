@@ -1,41 +1,86 @@
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-white rounded-lg shadow-sm dark:bg-gray-900">
-      <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-center">
-          <hr className="border-gray-200 dark:border-gray-700 my-4" />
+    <footer className="bg-gradient-to-r from-slate-100 to-slate-50 border-t border-black ">
+      <div className="max-w-6xl mx-auto px-6 py-10">
 
-        {/* Social Media Links */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
-          {/* Instagram */}
-          <a
-            href="https://instagram.com/altamash_ali_26"
-            target="_instagram"
-            rel="noopener noreferrer"
-            className="flex items-center text-pink-600 hover:underline gap-2"
-          >
-            <FaInstagram size={20} />
-            @altamash_ali_26
-          </a>
+        {/* TOP SECTION */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
 
-          {/* WhatsApp */}
-          <a
-            className="flex items-center text-green-600 hover:underline gap-2"
-          >
-            <FaWhatsapp size={20} />
-            9834588923
-          </a>
+          {/* LEFT - NAME */}
+          <div className="text-center md:text-left">
+            <h2 className="text-lg font-semibold text-gray-900">
+              Altamash Ali
+            </h2>
+            <p className="text-sm text-gray-600 mt-1">
+              MERN Stack Developer <br /> Mainly Focused As A Backend Developer
+            </p>
+          </div>
+
+          {/* RIGHT - SOCIAL LINKS */}
+          <div className="flex flex-wrap justify-center gap-6 text-sm">
+
+            <a
+              href="https://instagram.com/altamash_ali_26"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-600 hover:text-pink-500 transition"
+            >
+              <FaInstagram /> Instagram
+            </a>
+
+            <a
+              href="https://wa.me/919834588923"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-600 hover:text-green-600 transition"
+            >
+              <FaWhatsapp /> WhatsApp
+            </a>
+
+            <a
+              href="https://github.com/altamashali903"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition"
+            >
+              <FaGithub /> GitHub
+            </a>
+
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sayyadaltamash26@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-600 hover:text-emerald-600 transition"
+            >
+              <MdEmail /> Email
+            </a>
+
+          </div>
         </div>
 
-       
+        {/* DIVIDER */}
+        <hr className="border-gray-200 my-8" />
 
-        {/* Designed By Text */}
-        <span className="text-center font-lobster text-xl text-gray-700 dark:text-gray-300">
-  <span className="block md:inline">Designed By</span>{" "}
-  <span className="block md:inline">Altamash Ali Sayyad</span>
-</span>
-          <hr className="border-gray-200 dark:border-gray-700 my-4" />
+        {/* BOTTOM */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+
+          <p className="text-gray-500 text-center md:text-left">
+            © {new Date().getFullYear()} Altamash Ali. All rights reserved.
+          </p>
+
+          <p className="text-gray-600 font-medium text-center md:text-right">
+            Designed & Built by{" "}
+            <br className="block md:hidden" />
+            <span className="text-gray-600 font-semibold">
+              ALTAMASH ALI SAYYAD
+            </span>
+          </p>
+
+        </div>
+
       </div>
     </footer>
   );

@@ -7,12 +7,12 @@ const Skills = () => {
     },
     {
       title: "HTML & CSS",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAbGhJJCDC-L27qSTZuLFWaSnOdwFShWdA3Q&s",
+      img: "https://www.kindpng.com/picc/m/72-726511_html5css3badges-html-css-logo-png-transparent-png.png",
       desc: "Create responsive layouts using semantic HTML, Flexbox, Grid, and modern CSS.",
     },
     {
       title: "JavaScript",
-      img: "https://www.jquery-az.com/wp-content/uploads/2023/10/JavaScript.png",
+      img: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
       desc: "Write clean ES6+ code with async handling, events, and modular structure.",
     },
     {
