@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className="bg-[#f9fafb] py-5 px-4 sm:px-6">
+    <section className="bg-[#f9fafb] py-2 px-4 sm:px-6 border border-gray-700 shadow-sm hover:shadow-md transition pt-4 pb-16">
       <div className="max-w-2xl mx-auto">
 
         {/* Heading */}

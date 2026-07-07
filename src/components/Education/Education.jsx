@@ -18,7 +18,7 @@ const Education = () => {
   ];
 
   return (
-    <section className="bg-[#f9fafb] py-16 px-4 sm:px-6">
+    <section className="bg-[#f9fafb] py-3 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
 
         {/* Heading */}

@@ -3,55 +3,57 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const Project = () => {
   const projects = [
     {
-      title: "Attendance Management System For Employees",
+      title: "Attendance System For Employees",
       description:
-        "Face recognition-based system with real-time tracking, late rules automation, and reporting dashboard.",
-      tech: ["Node.js", "Express", "MySQL (SP)", "JWT", "React"],
-      live: "https://attendance.skyvisionitsolutions.online/",
+        "Face recognition-based system with real-time tracking, and reporting dashboard.",
+      tech: ["Node.js", "Express", "MySQL (SP)", "React"],
+      live: "https://attendance.skyvisionitsolutions.in/",
+
     },
     {
       title: "Logistics & Transload Platform",
       description:
         "Secure backend system to manage shipments, company data, and API-driven operations.",
-      tech: ["Node.js", "Express", "MySQL (SP)", "JWT", "React+Vite"],
-      live: "https://transload.skyvisionitsolutions.online/",
+      tech: ["Node.js", "Express", "MySQL (SP)", "React+Vite"],
+      live: "https://transload.skyvisionitsolutions.in/",
     },
     {
       title: "Turf Booking System",
       description:
         "Slot-based booking system with availability tracking and admin control for turf owners.",
-      tech: ["Node.js", "Express", "MySQL (SP)", "JWT", "React+Vite"],
-      live: "",
+      tech: ["Node.js", "Express", "MySQL (SP)", "React+Vite"],
+      live: "https://altamashali903.github.io/turfmanagement/",
     },
     {
       title: "Aptitude Test Platform",
       description:
         "Online platform for conducting aptitude tests with real-time evaluation and reporting.",
-      tech: ["Node.js", "Express", "MySQL (SP)", "JWT", "React+Vite"],
-      live: "https://exam.skyvisionitsolutions.online/",
+      tech: ["Node.js", "Express", "MySQL (SP)", "React+Vite"],
+      live: "https://examadmin.skyvisionitsolutions.in/",
     },
     {
-      title: "Attendance Management System For Gym",
+      title: "Invoice Mobile Application",
       description:
-        "Face recognition-based system for gym attendance tracking, with real-time monitoring and reporting features.",
-      tech: ["Node.js", "Express", "MySQL (SP)", "JWT", "React+Vite"],
-      live: "",
+        "A mobile app for generating invoices, managing clients, and tracking payments on the go.",
+      tech: ["Flutter", "Node.js", "Express", "MySQL", "Firebase"],
+      playStore: "https://play.google.com/store/apps/details?id=com.skyvision.invoiceapp",
+
     },
     {
-      title: "Database Backup Functionality",
+      title: "Daily Collection Mobile Application",
       description:
-        "A Functionality Which Helps To Take back up (Export) The Database (Schema) In MySQL",
-      tech: ["Node.js", "Express", "MySQL (SP)", "JWT", "React+Vite"],
-      live: "",
+        "An Application for daily collection management, tracking payments, and generating reports",
+      tech: ["Flutter", "Node.js", "Express", "MySQL", "Firebase"],
+      playStore: "https://play.google.com/store/apps/details?id=com.skyvision.dailycollection",
     },
   ];
 
   return (
-    <section id="projects" className="bg-[#f9fafb] py-10 px-6">
+    <section id="projects" className="bg-[#f9fafb] py-4 px-6 pt-18 pb-16 border border-gray-700 shadow-sm hover:shadow-md transition">
       <div className="max-w-6xl mx-auto">
 
         {/* HEADING */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-gray-900">Projects</h2>
           <p className="text-gray-500 mt-2 text-sm">
             Real-world systems I’ve built and worked on
@@ -84,7 +86,7 @@ const Project = () => {
                   {project.tech.map((t, index) => (
                     <span
                       key={index}
-                      className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full"
+                      className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full"
                     >
                       {t}
                     </span>
@@ -93,7 +95,7 @@ const Project = () => {
               </div>
 
               {/* BUTTON */}
-              <div className="mt-6">
+              <div className="mt-4">
                 {project.live ? (
                   <a
                     href={project.live}
@@ -102,6 +104,15 @@ const Project = () => {
                     className="inline-flex items-center justify-center gap-2 w-full bg-emerald-600 text-white text-sm py-2.5 rounded-lg hover:bg-emerald-700 transition"
                   >
                     View Live <FaExternalLinkAlt />
+                  </a>
+                ) : project.playStore ? (
+                  <a
+                    href={project.playStore}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full bg-emerald-600 text-white text-sm py-2.5 rounded-lg hover:bg-emerald-700 transition"
+                  >
+                    View on Play Store <FaExternalLinkAlt />
                   </a>
                 ) : (
                   <button

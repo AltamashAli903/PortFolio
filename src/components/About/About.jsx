@@ -1,7 +1,7 @@
 import profileImg from '../../assets/Altamash.jpg';
 const About = () => {
   return (
-    <section className="bg-[#f9fafb] py-5 px-6">
+    <section className="bg-[#f9fafb] py-5 px-6 pt-5 pb-20">
   <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
     {/* RIGHT SIDE CARD FIRST (will appear first everywhere) */}

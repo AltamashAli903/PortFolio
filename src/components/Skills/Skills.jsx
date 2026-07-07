@@ -33,7 +33,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="bg-[#f9fafb] py-6 px-4 sm:px-6">
+    <section className="bg-[#f9fafb] py-4 pb-20 px-4 sm:px-6 border border-gray-700 shadow-sm hover:shadow-md transition">
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
